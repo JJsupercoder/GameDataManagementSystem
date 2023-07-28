@@ -1,0 +1,173 @@
+<!-- 
+[(ngModel)]="addGame.gameName"
+[(ngModel)]="addGame.gameTitle"
+[(ngModel)]="addGame.cdCost"
+[(ngModel)]="addGame.gameType"
+[(ngModel)]="addGame.gameType"
+[(ngModel)]="addGame.gameType"
+[(ngModel)]="addGame.gameType"
+[(ngModel)]="addGame.gameRating"
+[(ngModel)]="addGame.creatorEmail"
+
+
+
+
+
+ -->
+<!-- (addNow(true);console.log('part1')) : (addNow(false);console.log('part2')) -->
+
+<div class="center">
+  <form [formGroup]="addForm" ngNativeValidate>
+    <div class="form-outline mb-4">
+      <label class="form-label" for="gameName">Game Name:</label>
+      <input
+        type="text"
+        id="gameName"
+        class="form-control"
+        formControlName="gameName"
+        [readonly]="this.editingMode"
+        required
+      />
+      <div
+        *ngIf="(game_name?.dirty || game_name?.touched) && game_name?.invalid"
+        class="alert text-danger"
+      >
+        Game Name is invalid.
+      </div>
+    </div>
+
+    <div class="form-outline mb-4">
+      <label class="form-label" for="gameTitle">Game Title:</label>
+      <input
+        type="text"
+        id="gameTitle"
+        class="form-control"
+        formControlName="gameTitle"
+        required
+      />
+      <div
+        *ngIf="
+          (game_title?.dirty || game_title?.touched) && game_title?.invalid
+        "
+        class="alert text-danger"
+      >
+        Game Title is invalid.
+      </div>
+    </div>
+
+    <div class="form-outline mb-4">
+      <label class="form-label" for="cdCost">CD cost:</label>
+      <input
+        type="number"
+        id="cdCost"
+        class="form-control"
+        formControlName="cdCost"
+        required
+      />
+      <div
+        *ngIf="(cd_cost?.dirty || cd_cost?.touched) && cd_cost?.invalid"
+        class="alert text-danger"
+      >
+        CD Cost is invalid.
+      </div>
+    </div>
+
+    <div class="form-outline mb-4">
+      <label class="form-label" for="gameType">Game Type:</label>
+      <br />
+      <input type="radio" value="Action" formControlName="gameType" required />
+      <label for="css">&nbsp; Action</label><br />
+
+      <input type="radio" value="RPG" formControlName="gameType" required />
+      <label for="css">&nbsp; RPG</label><br />
+
+      <input type="radio" value="Racing" formControlName="gameType" required />
+      <label for="css">&nbsp; Racing</label><br />
+
+      <input
+        type="radio"
+        value="Adventure"
+        formControlName="gameType"
+        required
+      />
+      <label for="css">&nbsp; Adventure</label><br />
+
+      <input type="radio" value="Casual" formControlName="gameType" required />
+      <label for="css">&nbsp; Casual</label><br />
+
+      <div
+        *ngIf="(game_type?.dirty || game_type?.touched) && game_type?.invalid"
+        class="alert text-danger"
+      >
+        Game Type is invalid.
+      </div>
+    </div>
+
+    <div class="form-outline mb-4">
+      <label class="form-label" for="gameRating">Game Rating:</label>
+      <input
+        type="number"
+        id="gameRating"
+        class="form-control"
+        formControlName="gameRating"
+        required
+      />
+      <div
+        *ngIf="
+          (game_rating?.dirty || game_rating?.touched) && game_rating?.invalid
+        "
+        class="alert text-danger"
+      >
+        Game Rating should be between 0 and 5
+      </div>
+    </div>
+
+    <div class="form-outline mb-4">
+      <label class="form-label" for="creatorEmail"
+        >Creator Email Address:</label
+      >
+      <input
+        type="email"
+        id="creatorEmail"
+        class="form-control"
+        formControlName="creatorEmail"
+        required
+      />
+      <div
+        *ngIf="
+          (creator_email?.dirty || creator_email?.touched) &&
+          creator_email?.invalid
+        "
+        class="alert text-danger"
+      >
+        Creator's email is invalid.
+      </div>
+    </div>
+
+    <input
+      type="button"
+      id="left"
+      class="btn btn-primary"
+      [disabled]="addForm.invalid"
+      value="{{ buttonText }}"
+      (click)="addNow()"
+    />
+    <button
+      id="clear"
+      type="button"
+      class="btn btn-primary"
+      (click)="clearForm()"
+    >
+      Clear
+    </button>
+
+    <button
+      id="back"
+      type="button"
+      class="btn btn-primary"
+      (click)="gotodashboardpage()"
+    >
+      Back
+    </button>
+  </form>
+</div>

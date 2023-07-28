@@ -1,0 +1,57 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "gameName": "Honkai Star Rail",
+      "gameTitle": "Honkai",
+      "cdCost": 234,
+      "gameType": "Overworld",
+      "gameRating": 3,
+      "creatorEmail": "sdfkj@dskfn.com"
+    },
+    {
+      "gameName": "edfasd",
+      "gameTitle": "asdf",
+      "cdCost": 23423,
+      "gameType": "Adventure",
+      "gameRating": 234,
+      "creatorEmail": "sadfadsfasd",
+      "id": 5
+    },
+    {
+      "gameName": "Helloworld",
+      "gameTitle": "hiii",
+      "cdCost": 233,
+      "gameRating": 5,
+      "creatorEmail": "adsf@asdf",
+      "id": 6
+    },
+    {
+      "gameName": "Helloworld",
+      "gameTitle": "hi",
+      "gameRating": 4,
+      "cdCost": 13,
+      "gameType": "Action",
+      "creatorEmail": "asdf@afd",
+      "id": 7
+    },
+    {
+      "gameName": "Helloworld",
+      "gameTitle": "asd",
+      "gameRating": 3,
+      "cdCost": 342,
+      "gameType": "Casual",
+      "creatorEmail": "asdf@afd",
+      "id": 8
+    },
+    {
+      "gameName": "Hello",
+      "gameTitle": "Yo",
+      "gameRating": 3,
+      "cdCost": 123,
+      "gameType": "Racing",
+      "creatorEmail": "asdf@afd",
+      "id": 9
+    }
+  ]
+}

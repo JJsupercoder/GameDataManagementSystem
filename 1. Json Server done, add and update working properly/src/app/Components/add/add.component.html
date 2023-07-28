@@ -1,0 +1,54 @@
+<div class="center">
+<form #myForm="ngForm" (ngSubmit)="addNow(myForm.value)">
+    
+    <div class="form-outline mb-4">
+      <label class="form-label" for="GameName">Game Name:</label>
+      <input type="text" id="gamename" name="gamename" class="form-control" [(ngModel)]="addGame.gameName" required> 
+    </div>
+
+    <div class="form-outline mb-4">
+      <label class="form-label" for="GameTitle">Game Title:</label>
+      <input type="text" id="gametitle" name="gametitle" class="form-control" [(ngModel)]="addGame.gameTitle" required>
+    </div>
+
+    <div class="form-outline mb-4">
+      <label class="form-label" for="CDcost">CD cost:</label>
+      <input type="number" id="cdcost" name="cdcost" class="form-control" [(ngModel)]="addGame.cdCost" required> 
+    </div>
+
+    <div class="form-outline mb-4">
+      <label class="form-label" for="GameType">Game Type:</label>
+      <br>
+      <input type="radio" name="gtype" value="Action" [(ngModel)]="addGame.gameType">
+      <label for="css">&nbsp; Action</label><br>
+
+      <input type="radio" name="gtype" value="RPG" [(ngModel)]="addGame.gameType">
+      <label for="css">&nbsp; RPG</label><br>
+
+      <input type="radio" name="gtype" value="Racing" [(ngModel)]="addGame.gameType">
+      <label for="css">&nbsp; Racing</label><br>
+
+      <input type="radio" name="gtype" value="Adventure" [(ngModel)]="addGame.gameType">
+      <label for="css">&nbsp; Adventure</label><br>
+
+      <input type="radio" name="gtype" value="Casual" [(ngModel)]="addGame.gameType">
+      <label for="css">&nbsp; Casual</label><br>
+    
+    </div>
+
+    <div class="form-outline mb-4">
+      <label class="form-label" for="GameRating">Game Rating:</label>
+      <input type="number" id="gamerating" name="gamerating" class="form-control" [(ngModel)]="addGame.gameRating" required>
+    </div>
+
+    <div class="form-outline mb-4">
+      <label class="form-label" for="email">Creator Email Address:</label>
+      <input type="email" id="email" name="email" class="form-control" [(ngModel)]="addGame.creatorEmail" required>
+    </div>
+
+    <input type="button" id="left" type="submit" class="btn btn-primary btn-block mb-4">
+    <button id ="right" type="button" class="btn btn-primary btn-block mb-4" (click)="gotodashboardpage()">Back</button>
+  
+  </form>
+</div>
+

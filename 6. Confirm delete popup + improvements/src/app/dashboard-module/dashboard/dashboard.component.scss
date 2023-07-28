@@ -1,0 +1,25 @@
+#add-game-button {
+  float: left;
+  width: 25%;
+  margin-left: 20%;
+}
+
+#list-game-button {
+  float: right;
+  width: 25%;
+  margin-right: 7%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.image img {
+  width: 65%;
+  height: 65%;
+  object-fit: cover;
+}

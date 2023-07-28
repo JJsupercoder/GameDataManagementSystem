@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "gameName": "GenshinImpact",
+      "gameTitle": "Honkai",
+      "gameRating": 3,
+      "cdCost": 2500,
+      "gameType": "Adventure",
+      "creatorEmail": "honkai@gmail.com",
+      "id": 1
+    },
+    {
+      "gameName": "HonkaiStarRail",
+      "gameTitle": "asd",
+      "gameRating": 4,
+      "cdCost": 32,
+      "gameType": "Racing",
+      "creatorEmail": "jenson.j@somaiya.edu",
+      "id": 2
+    }
+  ]
+}

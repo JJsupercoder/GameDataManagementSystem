@@ -1,0 +1,24 @@
+<div class="main">
+<table>
+    <tr>
+        <th> Game Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th> Game Title &nbsp;</th>
+        <th>CD cost &nbsp;</th>
+        <th>Game Type &nbsp;</th>
+        <th>Game Rating &nbsp;</th>
+        <th>Creator's email address &nbsp;</th>
+    </tr>
+    <tbody>
+      <tr *ngFor="let gameRecord of gameDataList">
+          <td>{{ gameRecord.gameName }}</td>
+          <td>{{ gameRecord.gameTitle }}</td>
+          <td>{{ gameRecord.cdCost }}</td>
+          <td>{{ gameRecord.gameType }}</td>
+          <td>{{ gameRecord.gameRating }}</td>
+          <td>{{ gameRecord.creatorEmail }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<button id ="right" type="button" class="btn btn-primary btn-block mb-4" (click)="gotodashboardpage()">Back</button>

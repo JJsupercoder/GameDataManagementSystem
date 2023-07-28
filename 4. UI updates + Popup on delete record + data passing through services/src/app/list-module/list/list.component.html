@@ -1,0 +1,56 @@
+<div class="main">
+  <table class="table table-bordered" role="grid">
+    <thead class="bg-secondary text-white">
+      <th>Game Name</th>
+      <th>Game Title</th>
+      <th>CD cost</th>
+      <th>Game Type</th>
+      <th>Game Rating</th>
+      <th>Creator's email address</th>
+      <th>Action</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let gameRecord of gameDataList">
+        <td>{{ gameRecord.gameName }}</td>
+        <td>{{ gameRecord.gameTitle }}</td>
+        <td>{{ gameRecord.cdCost }}</td>
+        <td>{{ gameRecord.gameType }}</td>
+        <td>{{ gameRecord.gameRating }}</td>
+        <td>{{ gameRecord.creatorEmail }}</td>
+        <td>
+          <div class="d-flex">
+            <button
+              id="editButton"
+              type="button"
+              mat-raised-button
+              class="btn btn-primary bg-primary text-white"
+              (click)="editButton(gameRecord.id)"
+            >
+              Edit
+            </button>
+            &nbsp;&nbsp;
+            <button
+              id="deleteButton"
+              type="button"
+              class="btn btn-primary bg-danger text-white"
+              mat-raised-button
+              (click)="deleteButton(gameRecord)"
+            >
+              Delete
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<button
+  id="right"
+  type="button"
+  mat-raised-button
+  class="btn btn-primary bg-primary text-white"
+  (click)="gotodashboardpage()"
+>
+  Back
+</button>

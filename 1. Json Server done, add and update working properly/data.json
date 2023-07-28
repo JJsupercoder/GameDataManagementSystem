@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "gameName": "Honkai Star Rail",
+      "gameTitle": "Honkai",
+      "cdCost": 234,
+      "gameType": "Overworld",
+      "gameRating": 3,
+      "creatorEmail": "sdfkj@dskfn.com"
+    },
+    {
+      "gameName": "edfasd",
+      "gameTitle": "asdf",
+      "cdCost": 23423,
+      "gameType": "Adventure",
+      "gameRating": 234,
+      "creatorEmail": "sadfadsfasd",
+      "id": 5
+    }
+  ]
+}

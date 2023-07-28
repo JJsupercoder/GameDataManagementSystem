@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "gameName": "Rocket League",
+      "gameTitle": "Psyonix",
+      "gameRating": 4,
+      "cdCost": 0,
+      "gameType": "Racing",
+      "creatorEmail": "psyonix@yahoo.co.in",
+      "id": 2
+    },
+    {
+      "gameName": "War Robots",
+      "gameTitle": "Pixonic",
+      "gameRating": 3,
+      "cdCost": 5000,
+      "gameType": "Action",
+      "creatorEmail": "pixonic@gmail.com",
+      "id": 3
+    },
+    {
+      "gameName": "Asphalt 9",
+      "gameTitle": "Overdrive",
+      "gameRating": 5,
+      "cdCost": 1500,
+      "gameType": "Racing",
+      "creatorEmail": "asphalt@rediffmail.com",
+      "id": 4
+    },
+    {
+      "gameName": "Asphalt",
+      "gameTitle": "Overdrive",
+      "gameRating": 4,
+      "cdCost": 1500,
+      "gameType": "Racing",
+      "creatorEmail": "ashpalt@rediffmail.com",
+      "id": 5
+    }
+  ]
+}

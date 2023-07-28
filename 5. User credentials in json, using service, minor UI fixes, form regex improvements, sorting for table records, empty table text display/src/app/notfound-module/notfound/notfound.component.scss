@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+  margin-top: 15%;
+}
+
+#toLogin {
+  background-color: purple;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding-top: 20px;
+}
